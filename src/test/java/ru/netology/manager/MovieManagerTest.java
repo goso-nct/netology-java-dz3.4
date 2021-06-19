@@ -111,7 +111,7 @@ class MovieManagerTest {
         Movie[] actual = { m1, m2, m3, m4, m5, m6, m7, m8, m9, m10, m11, m12 };
         mm.setMovies(actual);
         actual = mm.getLast();
-        Movie[] expected = { m10, m9, m8, m7, m6, m5, m4, m3, m2, m1 };
+        Movie[] expected = { m12, m11, m10, m9, m8, m7, m6, m5, m4, m3 };
         assertArrayEquals(expected, actual);
     }
 
@@ -131,7 +131,7 @@ class MovieManagerTest {
         Movie[] actual = { m1, m2, m3, m4, m5, m6, m7 };
         mm.setMovies(actual);
         actual = mm.getLast();
-        Movie[] expected = { m5, m4, m3, m2, m1 };
+        Movie[] expected = { m7, m6, m5, m4, m3 };
         assertArrayEquals(expected, actual);
     }
 

@@ -62,7 +62,7 @@ public class MovieManager {
     public Movie[] getLast() {
         int len = lastLimit > movies.length ? movies.length : lastLimit;
         Movie[] tmp = new Movie[len];
-        for (int i = 0, j = len-1; i < len; i++, j--) {
+        for (int i = 0, j = movies.length - 1; i < len; i++, j--) {
             tmp[i] = movies[j];
         }
         return tmp;
